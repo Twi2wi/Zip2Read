@@ -1,0 +1,24 @@
+{
+  "extensions": [
+    ".py",
+    ".js",
+    ".ts",
+    ".html",
+    ".css",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".md",
+    ".cpp",
+    ".c",
+    ".h",
+    ".java",
+    ".rs",
+    ".go",
+    ".sh",
+    ".sql",
+    ".xml",
+    ".toml",
+    ".lua"
+  ]
+}
