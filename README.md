@@ -23,62 +23,13 @@
 - Python 3.10+
 - OS: Windows / macOS / Linux
 
-### Quick Start
-```bash
-# 1. Clone or unzip the repository
-git clone https://github.com/yourusername/Zip2Read.git
-cd Zip2Read
-
-# 2. Create and activate the virtual environment
-python -m venv .venv
-.venv\Scripts\activate # Windows
-# source .venv/bin/activate # macOS / Linux
-
-# 3. Install dependencies
-pip install PyQt6
-
-# 4. Run the application
-python main.py
-```
-
 ---
 
-## 🚀 Usage
+## Usage
 1. **Select archive**: Drag `.zip` into the window area or click "Select archive"
 2. **Configure preset**: Select an extension configuration from the drop-down list
 3. **Extract**: Click "Extract to Markdown" → the progress will be displayed automatically
 4. **Open result**: The file will appear in `Documents/Zip2Read/` and open in any MD editor (VS Code, Obsidian, Typora, GitHub)
-
----
-
-## 🏗️ Project architecture
-```text
-Zip2Read/
-├── main.py # Entry point, global styles
-├── styles.py # QSS theme (palette, widgets, animations)
-├── Zip2Read.spec # PyInstaller configuration
-├── core/ # Business logic
-│ ├── config_manager.py # Loading/creating JSON presets
-│ └── extractor.py # ZIP parsing, filtering, MD generation
-├── ui/ # Interface
-│ ├── main_window.py # Framework, sidebar, page routing
-│ ├── worker_thread.py # Background QThread (without GUI freezes)
-│ └── pages/
-│ ├── extract_page.py # Extraction tab
-│ └── info_page.py # About tab
-└── utils/
-└── version.py # Version and metadata management
-```
-
----
-
-## 🛠️ EXE build (Windows/macOS/Linux)
-```bash
-pip install pyinstaller
-pyinstaller Zip2Read.spec
-```
-✅ The finished bundle will appear in the `dist/Zip2Read/` folder.
-📦 The `onedir` mode ensures stable PyQt6 launch without library archiving issues.
 
 ---
 
@@ -133,20 +84,3 @@ other_files: 4
 import sys
 ...
 ```
-```
-
----
-
-## 🤝 License
-Distributed under the [MIT](LICENSE).
-
-Use freely, modify, share. The author is not responsible for use in production environments.
-
----
-
-## 💖 Support
-Found a bug? Want to add a dark theme, batch processing, or MD previews?
-
-Open an issue or write in Discussion—we'll put the feature together in a single commit. 🛠️✨
-
-> *"Code should be as easy to read as a good book. Zip2Read helps turn an archive into a page."*
