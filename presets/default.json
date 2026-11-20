@@ -6,6 +6,7 @@
     ".html",
     ".css",
     ".json",
+    ".hjson",
     ".yaml",
     ".yml",
     ".md",
@@ -19,6 +20,8 @@
     ".sql",
     ".xml",
     ".toml",
-    ".lua"
+    ".lua",
+    ".vert",
+    ".frag"
   ]
 }
